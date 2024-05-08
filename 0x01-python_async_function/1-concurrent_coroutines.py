@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import asyncio
 module = __import__('0-basic_async_syntax')
 wait_random = module.wait_random
