@@ -12,4 +12,10 @@ async def wait_n(n:int, max_delay:int) ->List[float]:
     for x in range(n):
         wait_time = await wait_random(max_delay)
         list.append(wait_time)
+        if x > 0:
+            for y in range(x):
+                if (list[y] < list[y-1]):
+                    tmp = list[y]
+                    list[y] = list[y-1]
+                    list[y-1] = tmp
     return list
