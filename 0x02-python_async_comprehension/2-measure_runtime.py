@@ -2,7 +2,6 @@
 '''run coroutines concurrently'''
 import asyncio
 import time
-from typing import 
 
 module = __import__('1-async_comprehension')
 async_comprehension = module.async_comprehension
