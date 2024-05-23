@@ -2,4 +2,4 @@
 from typing import Union, Tuple
 '''annotating tuples'''
 def to_kv(k: str, v: Union[int, float])->Tuple[str, float]:
-    return (k, (v**v))
+    return (k, (v**2))
