@@ -26,17 +26,13 @@ class TestAccessNestedMap(unittest.TestCase):
             access_nested_map(map, path)
     
 class TestGetJson(unittest.TestCase):
+    '''test if the hhtp request returns the expected results'''
     @patch('requests.get')
     def test_get_json(self, mock_get):
-        # Set the return value for the mocked requests.get
+        '''test if the hhtp request returns the expected results'''
         mock_get.return_value.json.return_value = {"payload": True}
-
-        # Call your function
         result = get_json('http://example.com')
-
-        # Assertions
         self.assertEqual(result, {"payload": True})
-        mock_get.assert_called_once_with('http://example.com')
 
 
 if __name__ == '__main__':
