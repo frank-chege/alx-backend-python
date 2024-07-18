@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-import math
-'''annotate  add function'''
-def to_str(n: float)->str:
-    '''annotate  function'''
-    return str(n)
 
+
+def to_str(n: float) -> str:
+    '''Converts a floating-point number to a string.
+    '''
+    return str(n)

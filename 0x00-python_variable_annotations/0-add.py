@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-'''annotate  add function'''
-def add(a: float, b: float)->float:
-    '''annotate  add function'''
+'''Task 0's module.
+'''
+
+
+def add(a: float, b: float) -> float:
+    '''Adds two floating-point numbers.
+    '''
     return a + b

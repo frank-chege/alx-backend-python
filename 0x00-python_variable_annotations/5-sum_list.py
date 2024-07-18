@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from typing import List
-'''annotating list types'''
-def sum_list(input_list: List[float])->float:
-    '''annotating list types'''
-    return sum(input_list)
+
+
+def sum_list(input_list: List[float]) -> float:
+    '''Computes the sum of a list of floating-point numbers.
+    '''
+    return float(sum(input_list))
